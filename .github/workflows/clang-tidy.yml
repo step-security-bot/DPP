@@ -1,0 +1,13 @@
+name: clang-format
+on: [push, pull_request]
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Installation
+      run: sudo apt-get update && sudo apt-get install -y clang-tidy clang-format
+    - name: Checkout D++
+      uses: actions/checkout@v2
+    - name: clang-format
+      run: /usr/bin/clang-format -Werror --style=file --verbose include/dpp/*.h src/dpp/*.cpp
+

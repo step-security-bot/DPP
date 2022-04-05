@@ -1,0 +1,8 @@
+include/dpp/nlohmann/*
+include/dpp/fmt/*
+src/test.cpp
+src/test.h
+src/unittest.cpp
+src/dpp/os.cpp
+src/dpp/format.cpp
+win32/*
