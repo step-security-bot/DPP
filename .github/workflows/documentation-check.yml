@@ -12,6 +12,9 @@ on:
     files:
       - '**/documentation-check.yml'
 
+permissions:
+  contents: read
+
 jobs:
   docs:
     name: Check Documentation Spelling
